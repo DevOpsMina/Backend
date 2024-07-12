@@ -29,14 +29,14 @@ const cors = require('cors');
 const mysql = require('mysql2/promise');
 
 const app = express();
-const port = 5000;
+const port = 3001;
 
 app.use(cors());
 app.use(express.json());
 
 // MySQL Connection Pool
 const pool = mysql.createPool({
-  host: '172.31.26.1',
+  host: 'localhost',
   user: 'memina',
   password: 'Haz@el789',
   database: 'backenddatabase',
