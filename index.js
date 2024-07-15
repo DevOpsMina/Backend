@@ -80,17 +80,17 @@ const cors = require('cors');
 const mysql = require('mysql2/promise');
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port =  3001;
 
 app.use(cors());
 app.use(express.json());
 
 // MySQL Connection Pool
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'hazel',
-  password: process.env.DB_PASSWORD || 'admin',
-  database: process.env.DB_NAME || 'bohora',
+  host: 'localhost',
+  user: 'hazel',
+  password:  'admin',
+  database: 'bohora',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
