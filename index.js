@@ -108,7 +108,7 @@ app.post('/api/data', async (req, res) => {
     connection.release();
     res.status(201).json({ message: 'Data added successfully' });
   } catch (error) {
-    console.error('Error inserting data:', error);
+    console.error('Error inserting dataa:', error);
     res.status(500).json({ error: 'Error inserting data' });
   }
 });
