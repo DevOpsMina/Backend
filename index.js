@@ -115,7 +115,7 @@ app.post('/api/data', async (req, res) => {
 
 // Route to handle GET requests to the root endpoint
 app.get('/', (req, res) => {
-  res.send('Welcome to my backend server!');
+  res.send('Welcome to my backend serverr!');
 });
 
 // Start server
